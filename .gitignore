@@ -1,0 +1,31 @@
+# Python packaging, caches, local configs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+*.whl
+.env
+.env.*
+!.env.example
+# Local research outputs, private data and operational secrets
+.local/
+private/
+secrets/
+*.pem
+*.key
+.DS_Store
+
+# Manuscripts, archives, and local artifacts
+*.pdf
+*.tex
+*.bib
+*.zip
+*.tar
+*.gz
+.ruff_cache/

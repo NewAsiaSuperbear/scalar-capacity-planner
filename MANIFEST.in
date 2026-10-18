@@ -1,0 +1,2 @@
+include example_result.json requirements-tested.txt
+recursive-include validation *.py *.md

@@ -1,0 +1,129 @@
+{
+  "data_label": "SYNTHETIC ASSUMPTIONS; NO AI TRACES",
+  "model": {
+    "a": [
+      2.0,
+      -0.5
+    ],
+    "b": [
+      3.0,
+      -0.5
+    ],
+    "d": [
+      8.0,
+      2.0
+    ],
+    "p": 1.0,
+    "h": 4.0,
+    "mean_band": [
+      -0.1,
+      0.1
+    ],
+    "mad_center": 0.0,
+    "mad_upper": 0.5,
+    "nmax": 4,
+    "support": [
+      -1.0,
+      1.0
+    ]
+  },
+  "k": 3.0,
+  "Y": 2.0,
+  "is_dpp": true,
+  "result": {
+    "status": "verified",
+    "selected_x": 3,
+    "objective": 9.500000003496408,
+    "lower_bound": 9.499999999999998,
+    "upper_bound": 9.50000000349641,
+    "gap": 3.4964120487757104e-09,
+    "actions": [
+      {
+        "x": 0,
+        "status": "verified",
+        "solver_status": "optimal",
+        "objective": 19.20000086965235,
+        "lower_bound": 19.199999999999996,
+        "upper_bound": 19.200000869652357,
+        "gap": 8.69652352171058e-07,
+        "certificate_correction": 0.0,
+        "witness": {
+          "mean": 0.09999999999999999,
+          "mad": 0.28395522388059713,
+          "anchor_mix": 0.0,
+          "atoms": 2
+        },
+        "message": "Exact-rational envelope and feasible law checked; grid LP 0"
+      },
+      {
+        "x": 1,
+        "status": "verified",
+        "solver_status": "optimal",
+        "objective": 12.200000235724897,
+        "lower_bound": 12.199999999999998,
+        "upper_bound": 12.200000235724898,
+        "gap": 2.3572489722135345e-07,
+        "certificate_correction": 0.0,
+        "witness": {
+          "mean": 0.1,
+          "mad": 0.49999999999999983,
+          "anchor_mix": 3.4238485062993597e-16,
+          "atoms": 4
+        },
+        "message": "Exact-rational envelope and feasible law checked; grid LP 0"
+      },
+      {
+        "x": 2,
+        "status": "verified",
+        "solver_status": "optimal",
+        "objective": 9.500000076565188,
+        "lower_bound": 9.499999999999998,
+        "upper_bound": 9.50000007656519,
+        "gap": 7.656518781207213e-08,
+        "certificate_correction": 0.0,
+        "witness": {
+          "mean": 0.1,
+          "mad": 0.49999999999999994,
+          "anchor_mix": 2.2204460492503123e-16,
+          "atoms": 4
+        },
+        "message": "Exact-rational envelope and feasible law checked; grid LP 0"
+      },
+      {
+        "x": 3,
+        "status": "verified",
+        "solver_status": "optimal",
+        "objective": 9.500000003496408,
+        "lower_bound": 9.499999999999998,
+        "upper_bound": 9.50000000349641,
+        "gap": 3.4964092654233294e-09,
+        "certificate_correction": 0.0,
+        "witness": {
+          "mean": 0.1,
+          "mad": 0.4999999999999999,
+          "anchor_mix": 3.752667111296765e-16,
+          "atoms": 4
+        },
+        "message": "Exact-rational envelope and feasible law checked; grid LP 0"
+      },
+      {
+        "x": 4,
+        "status": "verified",
+        "solver_status": "optimal",
+        "objective": 12.000000019116685,
+        "lower_bound": 11.999999999999998,
+        "upper_bound": 12.000000019116687,
+        "gap": 1.9116685380369827e-08,
+        "certificate_correction": 0.0,
+        "witness": {
+          "mean": 0.0050000000000001155,
+          "mad": 0.0050000000000001155,
+          "anchor_mix": 0.0,
+          "atoms": 1
+        },
+        "message": "Exact-rational envelope and feasible law checked; grid LP 0"
+      }
+    ],
+    "message": "Integer enumeration; global lower bound is minimum across all actions. Verified means objective gap within requested tolerance, not operational safety."
+  }
+}

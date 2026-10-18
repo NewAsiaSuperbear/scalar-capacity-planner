@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77,<85"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "scalar-capacity-planner"
+version = "0.1.0"
+description = "Offline scalar-shock AI capacity research prototype"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.13,<2", "cvxpy>=1.6,<2", "clarabel>=0.11,<0.12"]
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+[project.scripts]
+scalar-capacity-planner = "scalar_capacity_planner.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
