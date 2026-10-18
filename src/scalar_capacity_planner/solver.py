@@ -60,7 +60,7 @@ class CapacityPlanner:
         if isinstance(grid_size,bool) or not isinstance(grid_size,int) or not 3<=grid_size<=100001:
             raise ValueError("grid_size must be integer in [3,100001]")
         self._spec=spec;self._lock=threading.Lock()
-        self._grid=np.unique(np.r_[np.linspace(-1,1,grid_size),spec.anchor,spec.mad_center,*spec.mean_band])
+        self._grid=np.unique(np.r_[np.linspace(-1,1,grid_size),spec.anchor,spec.mad_center,spec.mean_band[0],spec.mean_band[1]])
         self._x=cp.Parameter(nonneg=True);self._Y=cp.Parameter(nonneg=True)
         self._v=cp.Variable(3);v=self._v
         a=np.pad(spec.a,(0,3-len(spec.a)));b=np.pad(spec.b,(0,3-len(spec.b)));d=np.pad(spec.d,(0,3-len(spec.d)))
